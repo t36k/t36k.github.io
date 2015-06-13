@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="Avocado">
+	<head>
+		<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+	</head>
+
+	<body>
+		<h1>The Avocado El Dorado</h1>
+		<div ng-controller="GalleryController as galleryCtrl">
+			<li ng-repeat="art in galleryCtrl.artwork">
+				{{art.name}}
+			</li>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</html>
