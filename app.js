@@ -41,7 +41,7 @@
 			thumb: 'images/thumbs/shantou_thumb.jpg',
 			full: 'images/full/shantou.jpg',
 			layout: 'landscape'
-		},
+		},		
 		{
 			name: 'Council',
 			thumb: 'images/thumbs/council_thumb.jpg',
