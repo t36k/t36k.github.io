@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="Avocado">
 	<head>
-		<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
 	</head>
 
 	<body>
 		<h1>The Avocado El Dorado</h1>
+		<!--
 		<div ng-controller="GalleryController as galleryCtrl">
 			<li ng-repeat="art in galleryCtrl.artwork">
-				{{art.name}}
+				<a href=""><img src="{{art.thumb}}"</img></a>
 			</li>
 		</div>
+		-->
+		<div class="grid" ng-controller="GalleryController as galleryCtrl">
+			<div class="grid-sizer"></div>
+			<div ng-repeat="art in galleryCtrl.artwork">
+	  			<div ng-class="art.layout === 'portrait' ? 'grid-item' : 'grid-item--width2'">
+	  				<a href=""><img src="{{art.thumb}}"</img></a>
+	  			</div>
+	  		</div>
+		</div>
 	</body>
-
 	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type-"text/javascript" src="masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="test.js"></script>
 </html>
