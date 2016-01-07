@@ -6,7 +6,7 @@
 
 body { 
   font-family: sans-serif; 
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
@@ -23,8 +23,6 @@ body {
   width: 160px;
   height: 160px;
   float: left;
-  border-width: 1px;
-  border-color: red;
 }
 
 .item:hover {
@@ -32,22 +30,18 @@ body {
   cursor: pointer;
 }
 
-.item.w2 {
+.item.width2 {
   width: 320px;
-  background: #9C0;
 }
 
-.item.h2 {
+.item.height2 {
   height: 320px;
-  background: #0C9;
 }
 
-.item.w4 {
+.item.width4 {
   width: 640px;
-  background: #90C;
 }
 
-.item.h4 {
+.item.height4 {
   height: 640px;
-  background: #C90;
 }

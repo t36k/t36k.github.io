@@ -5,19 +5,15 @@
 
 	<body class="center-block">
 		<h2 class="title center-block">Teck Kuoch</h1>
-		<div class="packery js-packery" data-packery-options='{ "gutter": 5 }'>
-			<div class="item"><img src="images/thumbs/council.jpg"><img></div>
-			<div class="item h4"><img src="images/thumbs/reader.jpg"><img></div>
-			<div class="item w2 h2"><img src="images/thumbs/lazy_cat.jpg"></img></div>
-			<div class="item"><img src="images/thumbs/dagger.jpg"><img></div>
-			<div class="item w2"><img src="images/thumbs/fb.jpg"><img></div>
-			<div class="item w4"><img src="images/thumbs/shantou.jpg"><img></div>
-			<div class="item h2"><img src="images/thumbs/gatsby.jpg"><img></div>
-			<div class="item"><img src="images/thumbs/wrought.jpg"><img></div>
-			<div class="item"><img src="images/thumbs/inhabitants.jpg"><img></div>
-			<div class="item w2"><img src="images/thumbs/lysol.jpg"><img></div>
-			<div class="item"><img src="images/thumbs/realm.jpg"><img></div>
-		</div> 
+		<div class="container" ng-controller="GalleryController as galleryCtrl">
+			<div class="packery js-packery" data-packery-options='{ "gutter": 5 }'>
+				<div ng-repeat="art in galleryCtrl.artwork">
+					<div class="item" ng-class="art.thumbStyle">
+						<img ng-src="{{art.thumb}}"/>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
