@@ -39,6 +39,12 @@
 			thumbStyle: 'width2'
 		},
 		{
+			name: 'Lysol',
+			thumb: 'images/thumbs/lysol.jpg',
+			full: 'images/full/lysol.jpg',
+			thumbStyle: 'width2'
+		},
+		{
 			name: 'Shantou',
 			thumb: 'images/thumbs/shantou.jpg',
 			full: 'images/full/shantou.jpg',
@@ -62,17 +68,40 @@
 			full: 'images/full/inhabitants.jpg',
 			thumbStyle: ''
 		},
-
-		{
-			name: 'Lysol',
-			thumb: 'images/thumbs/lysol.jpg',
-			full: 'images/full/lysol.jpg',
-			thumbStyle: 'width2'
-		},
 		{
 			name: 'Realm',
 			thumb: 'images/thumbs/realm.jpg',
 			full: 'images/full/realm.jpg',
+			thumbStyle: ''
+		},
+		{
+			name: 'Fish',
+			thumb: 'images/thumbs/fish.jpg',
+			full: 'images/full/fish.jpg',
+			thumbStyle: ''
+		},
+		{
+			name: 'Boots',
+			thumb: 'images/thumbs/boots.jpg',
+			full: 'images/full/boots.jpg',
+			thumbStyle: ''
+		},
+		{
+			name: 'Crab Cakes',
+			thumb: 'images/thumbs/crab_cakes.jpg',
+			full: 'images/full/crab_cakes.jpg',
+			thumbStyle: ''
+		},
+		{
+			name: 'Pelican',
+			thumb: 'images/thumbs/pelican.jpg',
+			full: 'images/full/pelican.jpg',
+			thumbStyle: ''
+		},
+		{
+			name: 'Gangsta Pirate',
+			thumb: 'images/thumbs/pirate.jpg',
+			full: 'images/full/pirate.jpg',
 			thumbStyle: ''
 		}
 	];
