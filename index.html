@@ -3,8 +3,8 @@
 	<head>
 	</head>
 
-	<body>
-		<h1 class="title">The Avocado El Dorado</h1>
+	<body class="center-block">
+		<h2 class="title center-block">Teck Kuoch</h1>
 		<!--
 		<div ng-controller="GalleryController as galleryCtrl">
 			<li ng-repeat="art in galleryCtrl.artwork">
@@ -12,19 +12,47 @@
 			</li>
 		</div>
 		-->
-		<div class="container" ng-controller="GalleryController as galleryCtrl">
+<!-- 		<div class="grid" ng-controller="GalleryController as galleryCtrl">
 			<div ng-repeat="art in galleryCtrl.artwork">
-	  			<!-- <div class="item"> -->
-	  			<div class="item" ng-class="art.layout === 'landscape' ? 'w2' : ''">
-	  				<a href=""><img src="{{art.thumb}}"</img></a>
+	  			<div class= "grid-sizer"></div>
+	  			<div class="grid-item">
+	  				<a href=""><img src="{{art.thumb}}"></img></a>
 	  			</div>
 	  		</div>
-		</div>
+		</div> -->
+<!-- 
+		<div class="grid center-block">
+			<div class="grid-item grid-item--height3"><img src="images/fixed_width_thumbs/lazy_cat_thumb.jpg"></img></div>
+			<div class="grid-item grid-item--width2"><img src="images/fixed_width_thumbs/council_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--height3"><img src="images/fixed_width_thumbs/dagger_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img src="images/fixed_width_thumbs/fb_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--width4 grid-item--height2"><img src="images/fixed_width_thumbs/shantou_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--width3"><img src="images/fixed_width_thumbs/gatsby_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--height4"><img src="images/fixed_width_thumbs/reader_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--width2"><img src="images/fixed_width_thumbs/wrought_thumb.jpg"><img></div>
+			<div class="grid-item"><img src="images/fixed_width_thumbs/inhabitants_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--width2 grid-item--height2"><img src="images/fixed_width_thumbs/lysol_thumb.jpg"><img></div>
+			<div class="grid-item grid-item--height2"><img src="images/fixed_width_thumbs/realm_thumb.jpg"><img></div>
+		</div> -->
+
+		<div class="packery js-packery">
+			<div class="item"><img src="images/thumbs/council.jpg"><img></div>
+			<div class="item h4"><img src="images/thumbs/reader.jpg"><img></div>
+			<div class="item w2 h2"><img src="images/thumbs/lazy_cat.jpg"></img></div>
+			<div class="item"><img src="images/thumbs/dagger.jpg"><img></div>
+			<div class="item w2"><img src="images/thumbs/fb.jpg"><img></div>
+			<div class="item w4"><img src="images/thumbs/shantou.jpg"><img></div>
+			<div class="item h2"><img src="images/thumbs/gatsby.jpg"><img></div>
+			<div class="item"><img src="images/thumbs/wrought.jpg"><img></div>
+			<div class="item"><img src="images/thumbs/inhabitants.jpg"><img></div>
+			<div class="item w2"><img src="images/thumbs/lysol.jpg"><img></div>
+			<div class="item"><img src="images/thumbs/realm.jpg"><img></div>
+		</div> 
 	</body>
 	<script type="text/javascript" src="angular.min.js"></script>
 	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<!-- <script type-"text/javascript" src="masonry.pkgd.min.js"></script> -->
 	<script type-"text/javascript" src="packery.pkgd.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="test.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </html>

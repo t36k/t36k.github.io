@@ -1,4 +1,6 @@
 (function() {
+	var $container = $('.packery').packery();
+
 	var app = angular.module('Avocado', []);
 
 	app.controller('GalleryController', function() {
