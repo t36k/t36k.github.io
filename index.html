@@ -16,10 +16,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="obfuscate hidden" ng-click="showGallery()"></div>
-			<div class="art-display hidden">
-				<img class="selected-art hidden" ng-src="{{selectedArt}}" />
-			</div>
+			<div class="obfuscate" ng-show="selectedArt" ng-click="showGallery()"></div>
+			<img class="selected-art" ng-show="selectedArt" ng-src="{{selectedArt}}" />
 		</div>
 	</body>
 	<link rel="stylesheet" type="text/css" href="style.css" />
