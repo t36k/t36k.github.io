@@ -8,8 +8,11 @@
 		$scope.selectedArt = undefined;
 
 		$scope.showArt = function(art) {
+			var scrollTop = $(document).scrollTop();
 			$scope.selectedArt = art.full;
 			disableScroll();
+			$(".obfuscate").css("top", scrollTop);
+			$(".selected-art").css("top", scrollTop);
 		};
 
 		$scope.showGallery = function() {
