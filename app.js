@@ -3,9 +3,23 @@
 
 	var app = angular.module('Avocado', []);
 
-	app.controller('GalleryController', function() {
-		this.artwork = artworks;
-	});
+	app.controller('GalleryController', ['$scope', function($scope) {
+		$scope.artwork = artworks;
+		$scope.selectedArt = null;
+
+		$scope.showArt = function(art) {
+			$scope.selectedArt = art.full;
+			$('.obfuscate').removeClass('hidden');
+			$('.art-display').removeClass('hidden');
+			$('.selected-art').removeClass('hidden');
+		};
+
+		$scope.showGallery = function() {
+			$('.obfuscate').addClass('hidden');
+			$('.art-display').addClass('hidden');
+			$('.selected-art').addClass('hidden');
+		};
+	}]);
 
 	var artworks = [
 		{

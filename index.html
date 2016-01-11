@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html ng-app="Avocado">
 	<head>
-	<link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
+		<title>Teck Kuoch</title>
+		<link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
 	</head>
 
 	<body class="center-block">
@@ -10,11 +10,15 @@
 		<div class="container" ng-controller="GalleryController as galleryCtrl">
 			<div class="packery js-packery" data-packery-options='{ "gutter": 1 }'>
 				<div class="gutter-sizer"></div>
-				<div ng-repeat="art in galleryCtrl.artwork">
-					<div class="item" ng-class="art.thumbStyle">
-						<img ng-src="{{art.thumb}}"/>
+				<div ng-repeat="art in artwork track by $index">
+					<div class="item" ng-class="art.thumbStyle" ng-click="showArt(art)">
+						<img ng-src="{{art.thumb}}" ng-click="showArt(art)"/>
 					</div>
 				</div>
+			</div>
+			<div class="obfuscate hidden" ng-click="showGallery()"></div>
+			<div class="art-display hidden">
+				<img class="selected-art hidden" ng-src="{{selectedArt}}" />
 			</div>
 		</div>
 	</body>
