@@ -7,6 +7,7 @@
 
 	<body class="center-block">
 		<h2 class="title center-block">Teck Kuoch</h1>
+		<hr class="my-hr" />
 		<div ng-controller="GalleryController as galleryCtrl">
 			<div class="packery js-packery center-block" data-packery-options='{ "gutter": ".gutter-sizer", "itemSelector": ".item", "columnWidth": ".grid-sizer" }'>
 				<div class="grid-sizer"></div>
@@ -20,6 +21,8 @@
 			<div class="obfuscate" ng-show="selectedArt" ng-click="showGallery()"></div>
 			<img class="selected-art" ng-show="selectedArt" ng-src="{{selectedArt}}" ng-cloak/>
 		</div>
+		<hr class="my-hr" />
+		<a href="mailto:teck.kuoch@gmail.com" >teck.kuoch@gmail.com</a>
 	</body>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />

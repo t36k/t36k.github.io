@@ -10,6 +10,10 @@ body {
   text-align: center;
 }
 
+.my-hr {
+  width: 90%;
+}
+
 .packery {
   max-width: 90%;
   margin: 0 auto;
