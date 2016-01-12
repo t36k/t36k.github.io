@@ -7,12 +7,14 @@
 
 	<body class="center-block">
 		<h2 class="title center-block">Teck Kuoch</h1>
-		<div class="container" ng-controller="GalleryController as galleryCtrl">
-			<div class="packery js-packery" data-packery-options='{ "gutter": 1 }'>
-				<div class="gutter-sizer"></div>
-				<div ng-repeat="art in artwork track by $index">
-					<div class="item" ng-class="art.thumbStyle" ng-click="showArt(art)">
-						<img ng-src="{{art.thumb}}" ng-click="showArt(art)"/>
+		<div ng-controller="GalleryController as galleryCtrl">
+			<div class="container">
+				<div class="packery js-packery" data-packery-options='{ "gutter": 1 }'>
+					<div class="gutter-sizer"></div>
+					<div ng-repeat="art in artwork track by $index">
+						<div class="item" ng-class="art.thumbStyle" ng-click="showArt(art)">
+							<img ng-src="{{art.thumb}}" ng-click="showArt(art)"/>
+						</div>
 					</div>
 				</div>
 			</div>
