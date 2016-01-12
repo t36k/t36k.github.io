@@ -11,12 +11,22 @@ body {
 }
 
 .packery {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .packery:after {
   content: ' ';
   display: block;
   clear: both;
+}
+
+.grid-sizer {
+  width: 160px;
+}
+
+.gutter-sizer {
+  width: 1px;
 }
 
 .item {
